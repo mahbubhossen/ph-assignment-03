@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- daisy ui cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind css cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/4833a3e215.js" crossorigin="anonymous"></script>
+
+    <!-- custom variable -->
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sora : Sora, serif;
+
+      }
+    </style>
+  </head>
+  <body class="font-sora">
+    <header >
+      <!-- Banner Section -->
+      <section  class="bg-gradient-to-t from-[#FFFFFF] via-[#F5F2ED] to-[#EFEBE3] w-auto">
+
+        <!-- nav bar -->
+         <div class=" px-5 lg:py-6 px-20">
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                  <li><a>Product</a></li>
+                  <li><a>Services </a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="flex items-center gap-20 justify-center">
+                <div><a class=" text-xl"><img src="./c2-assets/logo-header.png" alt=""></a></div>
+                <div class=" md:hidden"><i class="fa-solid fa-bars"></i></div>
+              </div>
+              
+            </div>
+            <div class="navbar-center hidden  lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl">
+                  <li><a>Product</a></li>
+                  <li><a>Services </a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+            </div >
+            <div class=" navbar-end hidden sm:block md:flex gap-4 ">
+              <i class="  fa-solid fa-magnifying-glass"></i>
+              <i class=" fa-solid fa-cart-shopping"></i>
+              <button class=" btn btn-outline btn-success">Login</button>
+              <a class=" btn btn-success">Register</a>
+            </div>
+          </div>
+         </div>
+
+         <hr class="h-0.5 bg-green-500 border-0 dark:bg-gray-700 md:hidden lg:hidden">
+
+         <!-- second banner part -->
+          <div class="mt-20">
+            <div class="">
+              <h1 class="text-3xl font-bold text-center mb-8 ">Freshness <span class="text-[#179800]">You Can <br>
+                Count</span> On, Prices You’ll Love!</h1>
+              <p class="opacity-80 text-center mb-12">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="justify-center items-center text-center">
+              <img class=" mx-auto" src="./c2-assets/hero-vegetables.png" alt="">
+            </div>
+          </div>
+
+      </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>
